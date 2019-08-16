@@ -70,6 +70,15 @@
    Inicio
       </div>
       <div class='panel-body'>
+
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    {% csrf_token %}
+                    {{ form|bootstrap }}
+                    <button type="submit" class="btn btn-primary">Salvar Usuário</button>
+                </div>
+               
+            </form>
       
       </div>
     </div>
